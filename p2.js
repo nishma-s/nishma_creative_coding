@@ -29,6 +29,7 @@ function preload() {
 
 function setup() {
   let c = createCanvas(320, 260);
+  //the argument in the parent function should be the div id name defined in the html page.
   c.parent("canvas-holder");
   // Create the video
   video = createCapture(VIDEO);
