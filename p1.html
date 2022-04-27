@@ -8,13 +8,15 @@
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="p1/p1.js"></script>
   </head>
 
   <body>
     <!-- navigation menu -->
     <div class="nav">
-  <h1>Your Name</h1>
+      <h1>Your Name</h1>
       <ul>
         <li>Project <a href="p1.html">#1</a></li>
         <li>Project <a href="p2.html">#2</a></li>
@@ -29,24 +31,25 @@
     </div>
 
     <!-- main content -->
+
     <div class="content">
       <!-- 1. give your project  a titile -->
 
       <h1>
-        Project #1 Generative Design
+        Project #1 Color Picker
       </h1>
 
-      <!-- 2. embed your p5 sketch -->
+      <!-- 2. embed your p5 sketch by creating a div with an attribute-->
+      <!-- Use the p5 c.parent() function and the attribute name to have your p5 sketch show up here-->
+      <!-- https://p5js.org/reference/#/p5.Element/parent-->
+      <div id="canvas-holder">
+        
+      </div>
 
       <div class="fullwidth">
         <!-- below width and height refers to the dimensions of your sketch-->
 
-        <iframe
-          width="400px"
-          height="400px"
-          src="https://editor.p5js.org/brain/present/5Qak7lfrk"
-        ></iframe>
-        <p>Click to generate flowers.</p>
+        <p>Move your mouse.</p>
       </div>
 
       <!-- 3. write a short description to describe what the work is about -->
@@ -55,7 +58,7 @@
       </h1>
 
       <p>
-        This is my project
+       This is a p5 sketch.
       </p>
 
       <!-- 4. reflection -->
@@ -64,30 +67,18 @@
       </h1>
 
       <p>
-        I wanted to make a generative garden. 
+        I wanted to make a color pickers.
       </p>
 
-      <div class="fullwidth">
-        <img
-          src="https://cdn.glitch.com/87836090-8683-448f-a8fb-3af0c0f82bac%2Fworksheets-03.png?v=1598505804708"
-        />
-      </div>
+
 
       <h1>
         Credits
       </h1>
 
       <p>
-        This project was created based on the
-        <a
-          href="https://www.youtube.com/watch?v=hZB3UX1bh_Q&list=PLuLgmkp7OJgFhpFaQt4LGZBOoK_sjPbxj&index=6&t=0s"
-          >Sound Interactive tutorial</a
-        >
-        by Ari Melenciano (@AriCiano) and it remixes
-        <a href="https://github.com/everestpipkin/never">never</a> by Everest
-        Pipkin (@everestpipkin), licensed under
-        <a href="https://github.com/everestpipkin/never/blob/master/LICENSE"
-          >MIT License 2018</a
+        This project was created using
+        <a href="https://p5js.org/">p5js</a
         >.
       </p>
     </div>
